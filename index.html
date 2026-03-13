@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoki</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-  
+    <header>
+        <h2>Poznaj smoki!</h2>
+    </header>
+
+    <section id="vader">
+        <nav>
+            <div id="baza" onclick="pokaz('sekcja1')">Baza</div>
+            <div id="opisy" onclick="pokaz('sekcja2')" >Opisy</div>
+            <div id="galeria" onclick="pokaz('sekcja3')">Galeria</div>
+        </nav>
+
+        <main>
+            <section id="sekcja1">
+                <h3>Baza Smoków</h3>
+                <form method="post">
+                 <select>
+                    <option>Bułgaria</option>
+                    <option>Francja</option>
+                    <option>Chiny</option>
+                    <option>Japonia</option>
+                    <option>Polska</option>
+                 </select>
+
+                 <input type="submit" value="wyslij">
+                </form>
+                <table>
+                    <tr><th>„Nazwa”,</th><th>„Długość”,</th><th>„Szerokość”.</th></tr>
+                    <tr><td>1</td><td>2</td><td>3</td></tr>
+                    <tr><td>5</td><td>6</td><td>7</td></tr>
+                </table>
+            </section>
+
+            <section id="sekcja2">
+                <h3>Opisy smoków</h3>
+                <dl>
+                    <dt>Smok czerwony</dt>
+                    <dd>Pochodzi z Chin. Ma 1000 lat. Żywi się mniejszymi zwierzętami. Posiada łuski cenne na rynkach wschodnich do wyrabiania lekarstw. Jest dziki i groźny.</dd>
+                    <dt>Smok zielony</dt>
+                    <dd>Pochodzi z Bułgarii. Ma 10000 lat. Żywi się mniejszymi zwierzętami, ale tylko w kolorze zielonym. Jest kosmaty. Z sierści zgubionej przez niego, tka się najdroższe materiały.</dd>
+                    <dt>Smok niebieski </dt>
+                    <dd>Pochodzi z Francji. Ma 100 lat. Żywi się owocami morza. Jest natchnieniem dla najlepszych malarzy. Często im pozuje. Smok ten jest przyjacielem ludzi i czasami im pomaga. Jest jednak próżny i nie lubi się przepracowywać.</dd>
+                </dl>
+            </section>
+
+            <section id="sekcja3">
+                <h3>Galeria</h3>
+                <img src="smo1.JPG" alt="„Smok czerwony”">
+                <img src="smok2.JPG" alt="„Smok wielki”">
+                <img src="smok3.JPG" alt="„Skrzydlaty łaciaty”">
+            </section>
+        </main>
+    </section>
+
+    <footer>„Stronę opracował: Lorenzo</footer>
+    
+    <script src="skrypt.js"></script>
 </body>
 </html>
